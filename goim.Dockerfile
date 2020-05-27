@@ -15,7 +15,7 @@ ENV APP_NAME goim
 
 WORKDIR /app
 COPY --from=builder /app/comet /app/logic /app/job /app/
-COPY configs/* cmd/comet/*.toml cmd/job/*.toml cmd/logic/*.toml /app/
+COPY cmd/comet/*.toml cmd/job/*.toml cmd/logic/*.toml /app/
 
 EXPOSE 8000
 CMD ["sh"]

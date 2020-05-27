@@ -22,7 +22,7 @@ services:
   logic:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: goim.Dockerfile
     image: devxz/goim
     restart: always
     env_file: .env
@@ -39,7 +39,7 @@ services:
   job:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: goim.Dockerfile
     image: devxz/goim
     restart: always
     env_file: .env
